@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.blog-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease;
+    position: relative;
+  }
+  
+  .tracker {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent 80%);
+    border-radius: 50%;
+    z-index: 10;
+    transition: opacity 0.2s ease;
+  }
+  
